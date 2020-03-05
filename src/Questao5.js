@@ -3,20 +3,14 @@ class Pilha {
     this.maxSize = size;
     this.dados = [];
     this.topo = -1;
+    this.num = 0;
   }
 
-  swap() {
-    let aux = new Pilha(this.maxSize);
-    let fin = new Pilha(this.maxSize);
-
-    for (let i = 0; i < this.maxSize; i++) this.push(i);
-
-    fin.push(this.pop());
-    for (let i = 0; i < this.maxSize - 2; i++) aux.push(this.pop());
-    for (let i = 0; i < this.maxSize - 2; i++) fin.push(aux.pop());
-    fin.push(this.pop());
-
-    return fin;
+  convert(num) {
+    for (let i = 0; i < this.maxSize; i++) {
+      this.push(parseInt(num % 2));
+      num /= 2;
+    }
   }
 
   push(newData) {
@@ -56,12 +50,12 @@ class Pilha {
   }
 
   toString() {
-    let result = "[ ";
-    for (let i = 0; i <= this.topo; i++) {
-      result += `${this.dados[i]} `;
-    }
-    result += "]";
-    return result;
+    let str = "[ ";
+
+    while (!this.isEmpty()) str += this.pop() + " ";
+
+    str += "]";
+    return str;
   }
 }
 
