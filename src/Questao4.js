@@ -16,11 +16,7 @@ class Pilha2Fila {
       this.aux.push(this.pilha.pop());
     }
 
-    while (!this.aux.isEmpty()) {
-      this.pilha.push(this.aux.pop());
-    }
-
-    return this.pilha.pop();
+    return this.aux.pop();
   }
 }
 

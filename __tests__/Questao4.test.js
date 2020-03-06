@@ -11,7 +11,7 @@ test("Pilha", () => {
   p2f.enqueue(3);
   p2f.enqueue(4);
 
-  expect(p2f.dequeue()).toBe(4);
+  expect(p2f.dequeue()).toBe(1);
 });
 
 test("Underflow", () => {
