@@ -1,4 +1,4 @@
-import DeQ from "../src/Questao6";
+import DeQ from "../../src/Lista_1/Questao6";
 
 let dq;
 

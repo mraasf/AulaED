@@ -1,4 +1,4 @@
-import Fila2Pilha from "../src/Questao3";
+import Fila2Pilha from "../../src/Lista_1/Questao3";
 
 let f2p;
 beforeEach(() => {

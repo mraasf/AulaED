@@ -1,4 +1,4 @@
-import Parentese from "../src/Questao8";
+import Parentese from "../../src/Lista_1/Questao8";
 
 test("Valido: ", () => {
   let a = new Parentese("[[]]");

@@ -1,4 +1,4 @@
-import Pilha2Fila from "../src/Questao4";
+import Pilha2Fila from "../../src/Lista_1/Questao4";
 
 let p2f;
 beforeEach(() => {

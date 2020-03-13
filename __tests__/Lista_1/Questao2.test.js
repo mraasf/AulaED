@@ -1,4 +1,4 @@
-import Pilha from "../src/Questao2";
+import Pilha from "../../src/Lista_1/Questao2";
 
 let p;
 

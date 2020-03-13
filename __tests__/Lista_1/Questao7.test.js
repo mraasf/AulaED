@@ -1,4 +1,4 @@
-import Atendimento from "../src/Questao7";
+import Atendimento from "../../src/Lista_1/Questao7";
 
 test("Pegar Ficha", () => {
   let aten = new Atendimento(5);

@@ -10,41 +10,13 @@ class Lista {
 		this.head = new Node(null);
 	}
 
-	removeIt(dado){
-		if (this.head.proximo == null) {
-			return null;
-		}else if(dado == this.head.proximo.dado){
-			this.removeBeginning(dado);
-		} else {
-			let anterior = this.head.proximo;
-			let atual = this.head.proximo;
-			while(atual.dado != dado){
-				anterior = atual;
-				atual = atual.proximo;
-			}
-			anterior.proximo = atual.proximo;
-		}
-	}
-
-	getAt(index){
-		
-		if (this.head.proximo == null) {
-			return null;
-		} else {
-			let cont = 0;
-			let atual = this.head.proximo;
-			while (cont <= index) {
-				if (cont == index) {
-					return atual.dado;
-				}
-				//iteração
-				atual = atual.proximo;
-				cont++;
-			}
-		}
-		return null;
-	}
-
+    shuffle() {
+        for (let i = 0; i < this.size(); i++) {
+            this.addAt(Math.floor(Math.random() * this.size()), this.removeEnd());
+        }
+        
+        return this;
+    }
 
 	add(dado) {
 		let novo_no = new Node(dado);

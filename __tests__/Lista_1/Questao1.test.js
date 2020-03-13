@@ -1,4 +1,4 @@
-import Fracao from "../src/Questao1";
+import Fracao from "../../src/Lista_1/Questao1";
 
 let frac1, frac2;
 
